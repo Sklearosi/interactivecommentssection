@@ -162,6 +162,36 @@ text-align: left;
 
 }
 
+.replyMax {
+    display: flex;
+    width: 66px;
+    height: 24px;
+    justify-content: space-between;
+    align-items: center;
+    color:#5357B6 ;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.replyRamses {
+    
+        display: flex;
+        width: 66px;
+        height: 24px;
+        justify-content: space-between;
+        align-items: center;
+        color:#5357B6 ;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+}
+
 #buttons {
     display: flex;
     justify-content: space-evenly;
@@ -238,6 +268,42 @@ align-items: center;
     margin-bottom: 0;
 }
 
+.replyCommentrams {
+    background-color: white;
+    border-radius: 12px;
+    position: relative;
+    width: 100%;
+    margin: 40px auto;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.replyCommentrams textarea {
+    position: relative;
+    width: 85%;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 20px;
+    height: 96px;
+    border: #E9EBF0 1px solid;
+    border-radius: 12px;
+    resize: none;
+    font-family: 'Rubik', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+padding-top: 15px;
+padding-left: 10px;
+padding-right: 10px;
+
+}
+
+
 .replyComment textarea {
     position: relative;
     width: 85%;
@@ -270,7 +336,15 @@ padding-right: 10px;
     bottom: 17px;
 }
 
-#replyComment {
+.replyCommentrams img {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 16px;
+    bottom: 17px;
+}
+
+#replyCommentSection {
     position: absolute;
     right: 16px;
     bottom: 10px;
@@ -617,6 +691,35 @@ right:30px;
 bottom: -15px;
 }
 
+.saveReply {
+    background-color: #5357B6;
+    width: 104px;
+    height: 48px;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+color: white;
+text-align: center;
+border: none;
+border-radius: 12px;
+position: absolute;
+bottom: -60px;
+right: 0px;
+}
+
+.replyLi textarea{
+    position: relative;
+    margin-bottom: 70px;
+}
+
+#comment {
+    position: relative;
+    word-break: break-all; 
+}
+
+
 #userCommentDiv {
     width: auto;
     padding-right: 20px;
@@ -627,4 +730,185 @@ bottom: -15px;
     position: relative;
 }
 
+
+@media only screen and (min-width: 900px) {
+   .container{
+    position: relative;
+   }
+
+   #score {
+    display: grid;
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    left: 24px;
+    top: 26px;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+   }
+
+   #info {
+    margin-left: 80px;
+   }
+
+   #comment {
+    margin-left: 65px;
+    width: 85%;
+   }
+
+   .replyLi {
+    position: relative;
+    }
+
+    
+
+   .reply , .replyMax  {
+    position: absolute;
+    top: 18px;
+    right: 40px;
+   }
+
+   #replyInfo {
+    margin-left: 90px;
+   }
+
+   .replyRamses {
+    position: absolute;
+    top: 18px;
+    right: 40px;
+   }
+
+   #replyInfoUser {
+    margin-left: 90px;
+   }
+
+   .deleteComment {
+    position: absolute;
+    top: 18px;
+    right: 100px;
+   }
+
+   .editButtonReply {
+    position: absolute;
+    top: 18px;
+    right: 40px;
+   }
+
+   .writeComment img {
+    top: 30px;
+    width: 50px;
+    height: 50px;
+    left: 50px;
+   }
+
+   .writeComment textarea {
+    position: absolute;
+    width: 60%;
+    left: -60px;
+    right: 0;
+    margin: 0 auto;
+   }
+
+   #sendComment {
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    background-color: #5357B6;
+    border-radius: 12px;
+    color: white;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: center;
+width: 140px;
+height: 48px;
+font-family: 'Rubik', sans-serif;
+border: none;
+}
+
+#plus-minus {
+    display: grid;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto auto;
+    left: unset;
+    right: unset;
+    width: 40px;
+    height: 60%;
+    left: 16px;
+}
+
+#userCommentInfo {
+    margin-left: 60px;
+}
+
+.commented {
+    margin-left: 60px;
+}
+   
+    .newText {
+        width: 85%;
+    }
+
+    .deleteButton {
+        position: absolute;
+        top: 22px;
+    }
+
+    .editButton {
+        top: 22px;
+    }
+
+    #content {
+        margin-top: 100px;
+    }
+
+    
+
+    .plus {
+        margin-left: 3px;
+        cursor: pointer;
+    }
+
+    .minus {
+        margin-left: 3px;
+        cursor: pointer;
+    }
+
+    .reply, .replyMax, .replyRamses {
+        cursor: pointer;
+    }
+    
+    .editButton, .editButtonReply {
+        cursor: pointer;
+    }
+
+    .replyMax:hover {
+        opacity: 0.3;
+    }
+
+    .replyRamses:hover {
+        opacity: 0.3;
+    }
+
+    .reply:hover {
+        opacity: 0.3;
+    }
+
+    button:hover {
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+    textarea:focus {
+        border: #5357B6 1px solid;
+    }
+
+}
 
