@@ -353,20 +353,19 @@ replyCommentFor.addEventListener('click', (event) => {
         document.body.style.overflow = "hidden"
         document.body.append(popUp)
         popUp.style.top = window.pageYOffset + 300 + "px"
-        
         popUp.addEventListener("click", (a) => {
             if(a.target.classList.contains("yes")){
                 e.target.parentElement.parentElement.parentElement.remove()
                 a.target.parentElement.parentElement.remove()
                 document.querySelector('.writeComment').style.filter = "unset"
-        document.querySelector('.writeComment').style.pointerEvents = "none"
+        document.querySelector('.writeComment').style.pointerEvents = "unset"
         wrapper.style.filter = "unset"
         wrapper.style.pointerEvents = "unset"
         document.body.style.overflow = "unset"
             } else if(a.target.classList.contains("no")) {
                 a.target.parentElement.parentElement.remove()
                 document.querySelector('.writeComment').style.filter = "unset"
-        document.querySelector('.writeComment').style.pointerEvents = "none"
+        document.querySelector('.writeComment').style.pointerEvents = "unset"
         wrapper.style.filter = "unset"
         wrapper.style.pointerEvents = "unset"
         document.body.style.overflow = "unset"
